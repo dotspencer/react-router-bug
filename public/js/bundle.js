@@ -23933,70 +23933,75 @@ var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_module
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(
-  _reactRouterDom.HashRouter,
-  null,
-  _react2.default.createElement(
-    'div',
+var App = function App() {
+  return _react2.default.createElement(
+    _reactRouterDom.HashRouter,
     null,
-    _react2.default.createElement(
-      'ul',
-      null,
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouterDom.NavLink,
-          { exact: true, to: '/' },
-          'Home'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouterDom.NavLink,
-          { exact: true, to: '/about' },
-          'About'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(
-          _reactRouterDom.NavLink,
-          { exact: true, to: '/contact' },
-          'Contact'
-        )
-      )
-    ),
     _react2.default.createElement(
       'div',
       null,
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
-          return _react2.default.createElement(
-            'h2',
-            null,
+      _react2.default.createElement(
+        'ul',
+        null,
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.NavLink,
+            { exact: true, to: '/' },
             'Home'
-          );
-        } }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/about', render: function render() {
-          return _react2.default.createElement(
-            'h2',
-            null,
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.NavLink,
+            { exact: true, to: '/about' },
             'About'
-          );
-        } }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', render: function render() {
-          return _react2.default.createElement(
-            'h2',
-            null,
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.NavLink,
+            { exact: true, to: '/contact' },
             'Contact'
-          );
-        } })
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
+            return _react2.default.createElement(
+              'h2',
+              null,
+              'Home'
+            );
+          } }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/about', render: function render() {
+            return _react2.default.createElement(
+              'h2',
+              null,
+              'About'
+            );
+          } }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', render: function render() {
+            return _react2.default.createElement(
+              'h2',
+              null,
+              'Contact'
+            );
+          } })
+      )
     )
-  )
-), document.getElementById('root'));
+  );
+};
+
+var root = document.getElementById('root');
+_reactDom2.default.render(_react2.default.createElement(App, null), root);
 
 /***/ })
 

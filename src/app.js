@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 
-ReactDOM.render(
+const App = () => (
   <Router>
     <div>
       <ul>
@@ -16,6 +16,8 @@ ReactDOM.render(
         <Route path="/contact" render={ () => <h2>Contact</h2> }/>
       </div>
     </div>
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
+
+const root = document.getElementById('root');
+ReactDOM.render(<App/>, root);
