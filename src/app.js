@@ -10,7 +10,7 @@ ReactDOM.render(
         <li><NavLink exact to="/about">About</NavLink></li>
         <li><NavLink exact to="/contact">Contact</NavLink></li>
       </ul>
-      <div className="center">
+      <div>
         <Route exact path="/" render={ () => <h2>Home</h2> }/>
         <Route path="/about" render={ () => <h2>About</h2> }/>
         <Route path="/contact" render={ () => <h2>Contact</h2> }/>

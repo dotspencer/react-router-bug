@@ -23972,7 +23972,7 @@ _reactDom2.default.render(_react2.default.createElement(
     ),
     _react2.default.createElement(
       'div',
-      { className: 'center' },
+      null,
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', render: function render() {
           return _react2.default.createElement(
             'h2',
